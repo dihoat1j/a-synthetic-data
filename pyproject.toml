@@ -1,0 +1,9 @@
+[project]
+name = "a_synthetic_data"
+version = "0.1.0"
+description = "Production-ready a-synthetic-data toolkit for multi-agent orchestration and shared memory."
+requires-python = ">=3.10"
+dependencies = []
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
