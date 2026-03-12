@@ -13,7 +13,7 @@ class Orchestrator:
 
     def run(self, goal: str) -> RunResult:
         steps: list[str] = []
-        for task in ["plan", "execute", "summarize"]:
+        for task in ["plan", "execute", "review", "summarize"]:
             agent = select_agent(self.agents, task)
             owner = agent.name if agent else "unassigned"
             step = f"{task}:{owner}"
